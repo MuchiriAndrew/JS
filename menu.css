@@ -8,13 +8,86 @@ body {
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
-    /* flex is what is used nowadays instead of fload and flex wrap is used to place the contents next to each other */
+    /* flex is what is used nowadays instead of float and flex wrap is used to place the contents next to each other */
     z-index: 1000;
+    position: fixed;
+    top: 0;
 }
 
 .btn-toggle-nav {
     width: 60px;
     height: 100%;
     background-color: #f98f39;
-    background-image: url("");
+    background-image: url("img/menu.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    cursor: pointer;
 }
+
+.btn-toggle-nav:hover {
+    opacity: 0.5;
+}
+
+.nav-main ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+
+.nav-main li {
+    list-style: none;
+    line-height: 30px;
+}
+
+.nav-main li a {
+    display: block;
+    height: 100%;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.nav-sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: calc(100vh - 60px);
+    padding: 0 5px;
+    background-color: #1b1b1b;
+    z-index: 1000;
+}
+
+.nav-sidebar ul{
+    padding: 15px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.nav-sidebar ul li{
+    line-height: 60px;
+    list-style: none;
+}
+
+.nav-sidebar ul li span, .nav-sidebar ul li a {
+    display: block;
+    height: 60px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: arial;
+    font-size: 16px;
+    white-space: nowrap;/*makes sure that text does not jump into the other line if there is no space for it*/
+}
+
+.nav-sidebar ul li a:hover {
+   background-color: #222;
+}
+
+
+
