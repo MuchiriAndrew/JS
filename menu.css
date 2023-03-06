@@ -8,7 +8,7 @@ body {
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
-    /* flex is what is used nowadays instead of float and flex wrap is used to place the contents next to each other */
+    /* flex is what is used nowadays instead of float AND flex wrap is used to place the contents next to each other */
     z-index: 1000;
     position: fixed;
     top: 0;
