@@ -15,6 +15,8 @@ console.log(person.age);
 person.updateAge();
 console.log(person.age);*/
 
+
+//THERE IS A SHORTER WAY TO DO IT
 let person01 ={
     name: "Andrew",
     eyeColour: "Blue",
