@@ -60,7 +60,7 @@ body {
     padding: 0 5px;
     background-color: #1b1b1b;
     z-index: 1000;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; /* creates the animation like look of the sidebar sliding in and out  */
 }
 
 .nav-sidebar ul{
