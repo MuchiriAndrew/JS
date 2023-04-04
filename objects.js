@@ -1,11 +1,12 @@
 // first and longer way to do it
-/*let person = new Object();
+let person = new Object();
 
 person.name = "Andrew";
 person.eyeColour = "Black";
 person.age = "20";
 
-// console.log(person.name);
+
+console.log(person.name);
 
 person.updateAge = function() {
     return ++person.age;
@@ -13,24 +14,15 @@ person.updateAge = function() {
 
 console.log(person.age);
 person.updateAge();
-console.log(person.age);*/
+console.log(person.age);
 
 
 //THERE IS A SHORTER WAY TO DO IT
-let person01 ={
+let person={
     name: "Andrew",
     eyeColour: "Blue",
     age: "20",
-    updateAge: function (){
-        return ++person.age;
-    }
-}
-
-let person02 ={
-    name: "Andrew",
-    eyeColour: "Blue",
-    age: "20",
-    updateAge: function (){
+    updateAge: function() {
         return ++person.age;
     }
 }

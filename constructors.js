@@ -1,5 +1,6 @@
-//creating an object blueprint
+//creating an object blueprint and create constructors that are instances of the objects
 
+//CONSTRUCTOR
 function Person(name, eyeColor, age) {
     this.name = name;
     this.eyeColor = eyeColor;
