@@ -1,3 +1,3 @@
-How To Front-End In JavaScript
+How To Front-End In Vanilla JavaScript
 
-Comments are inluded in the code for easy understanding when referring
+
