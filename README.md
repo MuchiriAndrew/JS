@@ -1,3 +1,3 @@
-How To Front-End In Vanilla JavaScript
+How To Front-End In JavaScript
 
 
