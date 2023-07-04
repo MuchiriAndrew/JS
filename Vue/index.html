@@ -34,13 +34,15 @@
 <body>
   <h1>Hello, Vue :)</h1>
 
+  <!-- <p>{{ filteredBooks }}</p> -->
+
   <div id="app">
     <div v-if="showBooks">
       <ul>
-        <li @click="toggleFav(item)" v-for="item in books" :class="{fav: item.isFav }">
-          <img :src="item.image" :alt="item.title">
-          <h3>{{ item.title }}</h3>
-          <p>{{ item.author }}</p>
+        <li :key="book.id" @click="toggleFav(book)" v-for="book in filteredBooks" :class="{fav: book.isFav }">
+          <img :src="book.image" :alt="book.title">
+          <h3>{{ book.title }}</h3>
+          <p>{{ book.author }}</p>
         </li>
       </ul>
     </div>
