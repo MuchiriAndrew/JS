@@ -20,9 +20,16 @@
     <h1>HELLO WORLD</h1>
 
     <div id="app">
+
+        <!-- attribute binding -->
+        <a v-bind:href="url">best website ever</a>
+        <!-- you can use v-bind or just a colon to represent data binding -->
+
+
         <div v-if="showBooks">
             <ul>
                 <li v-for="item in books">
+                    <img :src="item.image" :alt="item.title">
                     <h3>{{item.title }}</h3>
                     <p>{{item.author}}</p>
                 </li>
