@@ -1,4 +1,4 @@
-const app = Vue.createApp({
+const app = Vue.createApp({  
     data(){
         return{
             showBooks:true,
@@ -21,7 +21,7 @@ const app = Vue.createApp({
             book.isFav = !book.isFav
         }
     },
-    
+
         
         computed: {
             filteredBooks() {
